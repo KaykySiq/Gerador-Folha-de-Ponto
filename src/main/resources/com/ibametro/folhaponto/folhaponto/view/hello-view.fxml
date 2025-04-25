@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.ibametro.folhaponto.folhaponto.controller.TelaInicialController">
+  <center>
+    <VBox alignment="CENTER" spacing="20">
+
+      <Label alignment="CENTER" style="-fx-font-size: 24px; -fx-font-weight: bold;" text="Gerador de Folha de Ponto" />
+
+      <GridPane alignment="CENTER" hgap="10" vgap="10">
+        <Label text="Funcionário:" GridPane.columnIndex="0" GridPane.halignment="RIGHT" GridPane.rowIndex="0" />
+        <ComboBox fx:id="nomeField" prefHeight="25.0" prefWidth="148.0" GridPane.columnIndex="1" GridPane.halignment="LEFT" GridPane.rowIndex="0" onAction="#carregarFuncionarios"/>
+
+        <Label text="Matrícula:" GridPane.columnIndex="0" GridPane.halignment="RIGHT" GridPane.rowIndex="1"/>
+        <TextField fx:id="matriculaField" GridPane.columnIndex="1" GridPane.halignment="LEFT" GridPane.rowIndex="1" promptText="Matrícula" editable="false"/>
+
+        <Label text="Mês Referente:" GridPane.columnIndex="0" GridPane.halignment="RIGHT" GridPane.rowIndex="2" />
+        <ComboBox fx:id="mesComboBox" GridPane.columnIndex="1" GridPane.halignment="LEFT" GridPane.rowIndex="2" />
+
+        <Label text="Ano:" GridPane.columnIndex="0" GridPane.halignment="RIGHT" GridPane.rowIndex="3" />
+        <TextField fx:id="anoField" GridPane.columnIndex="1" GridPane.halignment="LEFT" GridPane.rowIndex="3" />
+
+        <Button text="Envie a Folha de Ponto" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="4" />
+        <Button text="Salvar" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="4" />
+
+        <Button text="CADASTRAR" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="5" />
+
+        <Label fx:id="msgLabel" style="-fx-text-fill: green; -fx-font-weight: bold;" text="Arquivo salvo!" visible="false" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="6" />
+      </GridPane>
+    </VBox>
+  </center>
+</BorderPane>
