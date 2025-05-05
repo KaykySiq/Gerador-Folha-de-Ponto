@@ -60,6 +60,17 @@
       <artifactId>hibernate-core</artifactId>
       <version>6.5.3.Final</version>
     </dependency>
+
+    <dependency>
+      <groupId>org.apache.poi</groupId>
+      <artifactId>poi</artifactId>
+      <version>5.3.0</version>
+    </dependency>
+    <dependency>
+      <groupId>org.json</groupId>
+      <artifactId>json</artifactId>
+      <version>20240303</version>
+    </dependency>
   </dependencies>
 
   <build>
