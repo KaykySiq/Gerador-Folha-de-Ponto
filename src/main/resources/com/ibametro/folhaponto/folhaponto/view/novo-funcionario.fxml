@@ -4,9 +4,10 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Text?>
 
-<VBox xmlns:fx="http://javafx.com/fxml" fx:controller="com.ibametro.folhaponto.folhaponto.controller.CadastroFuncionarioController">
+<VBox alignment="CENTER" spacing="20" xmlns:fx="http://javafx.com/fxml" fx:controller="com.ibametro.folhaponto.folhaponto.controller.CadastroFuncionarioController">
     <Text text="Cadastrar Novo Funcionário" style="-fx-font-size: 20px; -fx-font-weight: bold;"/>
-    <TextField fx:id="nomeField" promptText="Digite o nome do funcionário" />
-    <TextField fx:id="matriculaField" promptText="Digite a matrícula do funcionário" />
-    <Button text="Salvar" onAction="#salvarFuncionario" />
+    <TextField maxWidth="220" fx:id="nomeField" promptText="Digite o nome do funcionário" />
+    <TextField maxWidth="220" fx:id="matriculaField" promptText="Digite a matrícula do funcionário" />
+    <Button maxWidth="280" text="Salvar" onAction="#salvarFuncionario" />
+
 </VBox>

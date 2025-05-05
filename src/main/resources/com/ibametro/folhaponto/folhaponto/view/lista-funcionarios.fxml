@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<VBox alignment="CENTER" spacing="15" style="-fx-padding: 20;" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/17.0.12" fx:controller="com.ibametro.folhaponto.folhaponto.controller.ListaFuncionariosController">
+   <HBox prefHeight="25.0" prefWidth="489.0">
+      <children>
+         <Button prefHeight="25.0" prefWidth="72.0" text="Voltar" />
+      </children>
+   </HBox>
+    <Text style="-fx-font-size: 20px; -fx-font-weight: bold;" text="Lista de Funcionários" />
+
+    <TableView fx:id="tabelaFuncionarios" prefHeight="300" prefWidth="800">
+        <columns>
+            <TableColumn fx:id="colunaNome" prefWidth="300" text="Nome" />
+            <TableColumn fx:id="colunaMatricula" prefWidth="310" text="Matrícula" />
+        </columns>
+    </TableView>
+
+    <Button onAction="#removerFuncionario" text="Deletar" />
+    <Button onAction="#abrirCadastroMatricula" text="Adicionar novo" />
+</VBox>
