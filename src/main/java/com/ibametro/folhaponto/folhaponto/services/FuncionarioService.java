@@ -1,4 +1,4 @@
-package com.ibametro.folhaponto.folhaponto.service;
+package com.ibametro.folhaponto.folhaponto.services;
 
 import com.ibametro.folhaponto.folhaponto.dao.FuncionarioDAO;
 import com.ibametro.folhaponto.folhaponto.domain.Funcionario;
